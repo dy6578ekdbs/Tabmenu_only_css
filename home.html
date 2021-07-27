@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 탭메뉴 만들기
+    
+    타입은 radio: 해제 안됨, 이름을 같게 지정하면 하나만 체크 가능
+체크박스는 중복선택이 됨, 해제도 됨 
+
+버튼 = input + label
+컨텐츠 = div 
+
+id랑 for 값 같으면, 둘이 연결된다 / 글씨(라벨) 선택해도 체크가 된다
+
+name="tabmenu" 그룹 지어주기 >> 무조건 하나만 체크 가능
+
+checked 무조건 하나는 체크가 되어있어야됨 처음에
+-->
+    
+<div class="tab_content"> 
+    <input type="radio" name="tabmenu" id="tab01" checked>
+    <label for="tab01">컨텐프탭버튼01</label>  
+
+    <input type="radio" name="tabmenu" id="tab02">
+    <label for="tab02">컨텐프탭버튼02</label>  
+
+    <input type="radio" name="tabmenu" id="tab03">
+    <label for="tab03">컨텐프탭버튼03</label>  
+
+
+    <div class="conbox con01">컨텐츠탭 내용01</div>
+    <div class="conbox con02">컨텐츠탭 내용02</div>
+    <div class="conbox con03">컨텐츠탭 내용03</div>
+
+</div>
+    
+</body>
+</html>

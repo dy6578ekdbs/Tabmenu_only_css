@@ -1,0 +1,38 @@
+/*
+[속성선택자] : 타입이 라디오인 인풋만 선택
++ 인접 요소 선택자 
+:checked 체크가 되었을때 변화하는 속성
+
+인풋은 내 눈에 안보임, 라벨을 누르면 인풋이 체크됨
+*/
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 20px;
+    background-color: #ccc;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #aaa;
+    color: #000;
+
+}
+
+.conbox{
+    width: 500px;
+    height: 600px;
+    background: #aaa;
+    margin: 0;
+    display: none;
+}
+
+input[id="tab01"]:checked ~ .con01 {display: block;}
+input[id="tab02"]:checked ~ .con02 {display: block;}
+input[id="tab03"]:checked ~ .con03 {display: block;}
